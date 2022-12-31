@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Nunito', sans-serif;
+}
+
+:root {
+  --bg-body: 230, 230, 230;
+  --primary-color: 235, 69, 95;
+  --brd-radius: 1.2em;
+  --fs-body: 1.2em;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(var(--bg-body));
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app .btn {
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgb(var(--primary-color));
+  border-radius: var(--brd-radius);
+  font-size: var(--fs-body);
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 200ms linear, border-radius 200ms linear;
+  /* RIPPLE VARIABLES */
+  --wk-rp-transition: 200;
+  --wk-rp-color: rgba(255, 255, 255, 0.3);
+  /* ANIMATED BUTTON VARIABLES */
+  --wk-bsw-default: none;
+  --wk-bsw-after: 0px 10px 15px -3px rgba(235, 69, 95, 0.7);
+  --wk-brd-radius-default: var(var(--brd-radius));
+  --wk-brd-radius-after: 0.2em;
+}

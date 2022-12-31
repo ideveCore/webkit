@@ -1,0 +1,12 @@
+{
+  "name": "animated-buttons",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "browser-sync start --config bs-config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.11"
+  }
+}
